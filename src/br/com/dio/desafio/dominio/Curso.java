@@ -2,12 +2,14 @@ package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo {
 
+    private int cargaHoraria;
     @Override
     public double calcularXP() {
         return xp_padrao * cargaHoraria;
     }
+    public Curso(){
 
-    private int cargaHoraria;
+    }
 
     public int getCargaHoraria() {
         return cargaHoraria;
